@@ -1,0 +1,91 @@
+/* 200 */
+.span-200,
+.span-400 {
+    width: 100%;
+    max-width: 500px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(4, 92, 119);
+    border-radius: 10px;
+    background-color: #092036;
+}
+
+.span-content {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-1 {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-span {
+    color: #067ff9;
+}
+
+.result {
+    color: #4ade80;
+}
+
+.button-copy {
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background-color: #0f1923;
+    border: 1px solid white;
+}
+
+/* 400 */
+.span-400 {
+    border: 1px solid #f59e0b;
+    background-color: rgba(255, 255, 0, 0.2);
+    display: flex;
+    align-items: center;
+
+}
+
+.span-content-400 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icon-400 {
+    width: 20px;
+    height: 20px;
+}
+
+.content-400 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 5px;
+}
+
+.title-400 {
+    color: #f59e0b;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.txt-400 {
+    color: white;
+}
+
+
+.button-x {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: gray;
+}

@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(210, 40%, 10%);
+    color: white;
+    font-family: Inter, system-ui, sans-serif;
+}
+
+
