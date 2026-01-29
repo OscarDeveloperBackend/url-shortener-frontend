@@ -1,6 +1,7 @@
 /* 200 */
 .span-200,
-.span-400 {
+.span-400,
+.span-500 {
     width: 100%;
     max-width: 500px;
     height: 80px;
@@ -26,60 +27,78 @@
 }
 
 .text-span {
+    font-size: 0.9rem;
+    font-weight: 600;
     color: #067ff9;
 }
 
 .result {
+    font-size: 1rem;
+    font-weight: 700;
     color: #4ade80;
 }
 
 .button-copy {
+    color: white;
     width: 120px;
     height: 50px;
     border: none;
     border-radius: 12px;
     background-color: #0f1923;
     border: 1px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-copy:hover {
+    background-color: #1a2533;
 }
 
 /* 400 */
-.span-400 {
+.span-400,
+.span-500 {
     border: 1px solid #f59e0b;
-    background-color: rgba(255, 255, 0, 0.2);
+    background-color: rgba(255, 255, 0, 0.15);
+    align-items: center;
+}
+
+.span-content-400,
+.span-content-500 {
     display: flex;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
 
 }
 
-.span-content-400 {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+.icon-400,
+.icon-500 {
+    width: 30px;
+    height: 30px;
 }
 
-.icon-400 {
-    width: 20px;
-    height: 20px;
-}
 
-.content-400 {
+.content-400,
+.content-500 {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 350px;
     gap: 5px;
 }
 
-.title-400 {
+.title-400,
+.title-500 {
     color: #f59e0b;
     margin: 0;
     padding: 0;
     line-height: 1;
 }
 
-.txt-400 {
+.txt-400,
+.txt-500 {
     color: white;
 }
-
 
 .button-x {
     border: none;
@@ -87,5 +106,23 @@
     cursor: pointer;
     width: 30px;
     height: 30px;
-    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-x:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+/* 500 */
+
+.span-500 {
+    border: 1px solid #ef4444;
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.title-500 {
+    color: #ef4444;
 }

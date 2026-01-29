@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [url, setUrl] = useState("");
-  const [res, setRes] = useState({ shortcode:'214fa', code: 200 });
+  const [res, setRes] = useState({ shortcode:null, code: null });
 
   const isUrl = (url) => {
     try {
@@ -19,13 +19,12 @@ export default function Home() {
   };
 
   async function Short() {
-    const URL = "http://localhost:3000/url";
+    const API_URL = `${import.meta.env.VITE_API_URL}/url`;
 
-    if (url === "") return;
-    if (isUrl(url) == false) return;
+    if (!url || !isUrl(url)) return;
 
     try {
-      const response = await fetch(URL, {
+      const response = await fetch(API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
