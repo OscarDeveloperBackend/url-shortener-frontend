@@ -12,10 +12,16 @@ export default function Footer() {
           <p>Powered by React-Vite</p>
         </div>
         <div className="icons">
-          <a href="">
+          <a
+            href="https://github.com/OscarDeveloperBackend/url-shortener-backend"
+            target="_blank"
+          >
             <img src="/git-svgrepo-com.svg" width={50} height={50} alt="" />
           </a>
-          <a href="">
+          <a
+            href="https://github.com/OscarDeveloperBackend/url-shortener-frontend"
+            target="_blank"
+          >
             <img src="/git-svgrepo-com.svg" width={50} height={50} alt="" />
           </a>
         </div>

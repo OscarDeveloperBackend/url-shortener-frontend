@@ -1,65 +1,67 @@
 footer {
-    max-width: 1200px;
-    margin: 2rem auto 0 auto;
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-    border-top: 1px solid #ddd;
-    font-family: system-ui, sans-serif;
-    font-size: 0.9rem;
-    color: #666;
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: #666;
 }
 
-
 .footer-content {
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .content-1 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    gap: 5rem;
-
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
 }
 
 a {
-    text-decoration: none;
-    color: gray;
-    transition: color 0.2s ease;
-    padding: 12px;
-    border-radius: 20px;
+  text-decoration: none;
+  color: gray;
+  transition: color 0.2s ease;
+  padding: 12px;
+  border-radius: 20px;
 }
 
 a:hover {
-    background-color: #6a5a5a21;
-    color: white;
+  background-color: #6a5a5a21;
+  color: white;
 }
 
 .span {
-    color: gray;
-    font-size: 0.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: gray;
+  font-size: 0.8rem;
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .icons img {
-    width: 32px;
-    height: 32px;
-    opacity: 0.8;
-    transition: opacity 0.2s ease;
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
 }
 
 .icons img:hover {
-    opacity: 1;
+  opacity: 1;
 }

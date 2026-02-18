@@ -4,7 +4,7 @@ const icons = {
   400: "/warning_35dp_F59E0B_FILL0_wght400_GRAD0_opsz40.svg",
   500: "/error_35dp_EF4444_FILL0_wght400_GRAD0_opsz40.svg",
 };
-
+const API_URL = `${import.meta.env.VITE_API_URL}/url`;
 const getClasses = (type) => ({
   home: `span-${type}`,
   content: `span-content-${type}`,
@@ -21,6 +21,15 @@ export default function Response({ res, setRes }) {
 
   const limpiar = () => {
     setRes({ shortcode: null, code: null });
+  };
+  const link = `${API_URL}/${shortcode}`;
+  const copiar = async () => {
+    try {
+      await navigator.clipboard.writeText(link);
+      alert("Link copiado");
+    } catch (err) {
+      console.error("Error al copiar:", err);
+    }
   };
 
   if (!shortcode && !code) {
@@ -46,26 +55,29 @@ export default function Response({ res, setRes }) {
       />
     );
   }
-  return (
-    <div className="span-200">
-      <div className="span-content">
-        <div className="content-1">
-          <p className="text-span">YOUR SHORTENED LINK:</p>
-          <a
-            href={`${import.meta.env.VITE_API_URL}/${shortcode}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="result"
-          >
-            {import.meta.env.VITE_API_URL}/{shortcode}
-          </a>
+
+  if (code === 200) {
+    return (
+      <div className="span-200">
+        <div className="span-content">
+          <div className="response-content-1">
+            <p className="text-span">YOUR SHORTENED LINK:</p>
+            <a
+              className="response-result"
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link}
+            </a>
+          </div>
+          <button onClick={copiar} className="button-copy">
+            Copy Link
+          </button>
         </div>
-        <button onClick={limpiar} className="button-copy">
-          Copy Link
-        </button>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 const Alert45 = ({ title, txt, classes, onClose }) => {

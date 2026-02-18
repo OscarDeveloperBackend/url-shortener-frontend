@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [url, setUrl] = useState("");
-  const [res, setRes] = useState({ shortcode:null, code: null });
+  const [res, setRes] = useState({ shortcode: null, code: null });
 
   const isUrl = (url) => {
     try {
